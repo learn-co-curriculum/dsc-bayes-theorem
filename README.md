@@ -64,4 +64,33 @@ giving you exactly the same result.
 
 With one silly example out of the way, let's examine a more practical example from natural language processing. In fact, this is an example you'll further flesh out later this section.
 
-A common introductory example to natural language processing or classification is spam. While you may enjoy spam in a can, you probably don't enjoy getting spam in your inbox. 
+A common introductory example to natural language processing or classification is spam. While you may enjoy spam in a can, you probably don't enjoy getting spam in your inbox. Bayes' theorem can serve as a natural classification method in these scenarios. Assume that the word "offer" (as in Special Offer, We Have an Offer for You, or Don't Miss This Offer!) occurs in 73% of the spam messages you receive. In comparison, only 10% of your desired mail contains the word "offer". If 20% of the messages you receive are spam, and you receive another message with the word "offer", what is the probability that it is spam?
+
+As you might have guessed, you can solve this using Bayes' Theorem!
+
+First, set up the problem:
+
+$P(Spam|Offer) = \frac{P(Offer|Spam)P(Spam)}{P(Offer)}$
+
+Then substituting some of the immediate knowledge we have from the scenario:
+
+$P(Spam|Offer) = \frac{.73 \bullet .20}{P(Offer)}$  
+
+Finally, the probability of receiving an email with the word "offer", P(Offer), can be evaluated by decomposing it into the two subsets spam and not spam:
+
+$P(Offer) = P(Spam)\bullet P(Offer|Spam) + P(~Spam) \bullet P(Offer | ~Spam)$  
+$P(Offer) = .20 \bullet .73 + .8 \bullet .10$  
+$P(Offer) = .146 + .08$  
+$P(Offer) = .226$  
+
+Finally, substituting this into the original Bayes formula you have:
+
+$P(Spam|Offer) = \frac{.73 \bullet .20}{P(Offer}$  
+$P(Spam|Offer) = \frac{.73 \bullet .20}{.226}$  
+$P(Spam|Offer) = .5615$  
+
+As you can see, while spam has a much higher occurrence of the word "offer", the prescence of the word alone does not provide strong confidence that the message is spam. To provide more statistical power, you will eventually extend Bayes' Theorem to multiple observations simultaneously using the relative probabilities of multiple words.  
+
+## Summary
+
+In this lesson, you were introduced to Bayes' Theorem, and saw how it can be used to quanitify conditional probabilities. With that, let's turn to some more simple examples for you to practice and deepen your understanding.
