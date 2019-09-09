@@ -87,7 +87,7 @@ Finally, substituting this into the original Bayes formula you have:
 
 $P(\text{Spam | Offer}) = \dfrac{.73 \cdot .20}{P(\text{Offer})}$  
 $P(\text{Spam | Offer}) = \dfrac{.73 \cdot .20}{.226}$  
-$P(\text{Spam | Offer}) = .5615$  
+$P(\text{Spam | Offer}) = .6460$  
 
 As you can see, while spam has a much higher occurrence of the word "offer", the prescence of the word alone does not provide strong confidence that the message is spam. To provide more statistical power, you will eventually extend Bayes' Theorem to multiple observations simultaneously using the relative probabilities of multiple words.  
 
