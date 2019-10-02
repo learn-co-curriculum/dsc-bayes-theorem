@@ -3,7 +3,7 @@
 
 ## Introduction
 
-Bayes theorem is an indispensable law of probability, allowing you to deductively quantify unknown probabilities. The theory rests upon conditional probability. Let's take a look in practice.
+Bayes theorem is an indispensable law of probability, allowing you to deductively quantify unknown probabilities. The theory rests upon conditional probability. Let's take a look at it in practice.
 
 ## Objectives
 
