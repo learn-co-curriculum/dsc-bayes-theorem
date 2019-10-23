@@ -9,18 +9,20 @@ Bayes theorem is an indispensable law of probability, allowing you to deductivel
 
 You will be able to:
 
-* Define Bayes' Theorem
-* Provide examples of Bayes' Theorem
+* Define Bayes theorem in relation to conditional probabilities 
+* Identify examples of applications of Bayes' theorem 
 
-## Bayes' Formula
+
+## Bayes' formula
 
 # $P(A|B) = \dfrac{P(B|A)P(A)}{P(B)}$
 
-## Breaking the Formula Apart
+### Breaking the formula apart
 
 Bayes' theorem is quite intuitive, decomposing the conditional probability of 'A given B' in terms of the probability that both events are true divided by the probability that B is true. Bayes theorem takes this natural idea a step further, expressing the probability that both events are true as a conditional probability multiplied by the condition itself.
 
-To recap, 
+To recap: 
+
 
 Bayes' Theorem takes the definition of the conditional likelihood:
 
@@ -33,13 +35,13 @@ Making this substitution, you have Bayes' Theorem:
 ### $P(A|B) = \dfrac{P(B|A)P(A)}{P(B)}$
 
 
-## A Silly Example
+## A simple example
 
-Let's take a simple theoretical example to demonstrate. Imagine there are two fish tanks at the local pet store. The small tank holds 10 Betta fish.  The large tank has 200 goldfish and 35 Betta fish. Given that a fish is a Betta fish, what's the probability it comes from the small tank? 
+Let's take a simple theoretical example to demonstrate. Imagine there are two fish tanks at the local pet store. The small tank holds 10 Betta fish. The large tank has 200 goldfish and 35 Betta fish. Given that a fish is a Betta fish, what's the probability it comes from the small tank? 
 
 On the one hand, it seems that if you were to select a fish from the large tank, you'd probably end up with a goldfish. However, because these tanks are of such vastly different sizes, the probability that the fish came from the larger tank is actually more probable. 
 
-Using Bayes' Theorem, you are looking to find the probability that the fish came from the small tank, given that it is a Betta fish:
+Using Bayes' theorem, you are looking to find the probability that the fish came from the small tank, given that it is a Betta fish:
 
 $P(\text{small_tank | Betta_fish}) = \dfrac{P(\text{Beta_fish | small_tank})P(\text{small_tank})}{P(\text{Beta_fish})}$  
 
@@ -60,13 +62,14 @@ $\dfrac{10}{45}$
 
 giving you exactly the same result.
 
-## A NLP Example
 
-With one silly example out of the way, let's examine a more practical example from natural language processing. In fact, this is an example you'll further flesh out later this section.
+## An NLP example
 
-A common introductory example to natural language processing or classification is spam. While you may enjoy spam in a can, you probably don't enjoy getting spam in your inbox. Bayes' theorem can serve as a natural classification method in these scenarios. Assume that the word "offer" (as in Special Offer, We Have an Offer for You, or Don't Miss This Offer!) occurs in 73% of the spam messages you receive. In comparison, only 10% of your desired mail contains the word "offer". If 20% of the messages you receive are spam, and you receive another message with the word "offer", what is the probability that it is spam?
+With this simple example out of the way, let's examine a more practical example from the field of Natural Language Processing. In fact, this is an example you'll further flesh out later this section.
 
-As you might have guessed, you can solve this using Bayes' Theorem!
+A common introductory example to Natural Language Processing or classification is detecting spam. While you may enjoy spam in a can, you probably don't enjoy getting spam in your inbox. Bayes' theorem can serve as a natural classification method in these scenarios. Assume that the word "offer" (as in Special Offer, We Have an Offer for You, or Don't Miss This Offer!) occurs in 73% of the spam messages you receive. In comparison, only 10% of your desired mail contains the word "offer". If 20% of the messages you receive are spam, and you receive another message with the word "offer", what is the probability that it is spam?
+
+As you might have guessed, you can solve this using the Bayes' theorem!
 
 First, set up the problem:
 
@@ -76,7 +79,7 @@ Then substituting some of the immediate knowledge we have from the scenario:
 
 $P(\text{Spam | Offer}) = \dfrac{.73 \cdot .20}{P(\text{Offer})}$  
 
-Finally, the probability of receiving an email with the word "offer", P(Offer), can be evaluated by decomposing it into the two subsets spam and not spam:
+Finally, the probability of receiving an email with the word "offer", $P(\text{Offer})$, can be evaluated by decomposing it into the two subsets spam and not spam:
 
 $P(\text{Offer}) = P(\text{Spam})\cdot P(\text{Offer | Spam}) + P(\text{~Spam)} \cdot P(\text{Offer | ~Spam})$  
 $P(\text{Offer}) = .20 \cdot .73 + .8 \cdot .10$  
@@ -89,8 +92,8 @@ $P(\text{Spam | Offer}) = \dfrac{.73 \cdot .20}{P(\text{Offer})}$
 $P(\text{Spam | Offer}) = \dfrac{.73 \cdot .20}{.226}$  
 $P(\text{Spam | Offer}) = .6460$  
 
-As you can see, while spam has a much higher occurrence of the word "offer", the prescence of the word alone does not provide strong confidence that the message is spam. To provide more statistical power, you will eventually extend Bayes' Theorem to multiple observations simultaneously using the relative probabilities of multiple words.  
+As you can see, while spam has a much higher occurrence of the word "offer", the prescence of the word alone does not provide strong confidence that the message is spam. To provide more statistical power, you will eventually extend Bayes' theorem to multiple observations simultaneously using the relative probabilities of multiple words.  
 
 ## Summary
 
-In this lesson, you were introduced to Bayes' Theorem, and saw how it can be used to quanitify conditional probabilities. With that, let's turn to some more simple examples for you to practice and deepen your understanding.
+In this lesson, you were introduced to the Bayes' theorem, and saw how it can be used to quanitify conditional probabilities. With that, let's turn to some more simple examples for you to practice and deepen your understanding.
