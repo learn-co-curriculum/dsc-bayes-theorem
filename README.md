@@ -9,7 +9,7 @@ Bayes theorem is an indispensable law of probability, allowing you to deductivel
 
 You will be able to:
 
-* Define Bayes theorem in relation to conditional probabilities 
+* Define Bayes' theorem in relation to conditional probabilities 
 * Identify examples of applications of Bayes' theorem 
 
 
@@ -65,7 +65,7 @@ giving you exactly the same result.
 
 ## An NLP example
 
-With this simple example out of the way, let's examine a more practical example from the field of Natural Language Processing. In fact, this is an example you'll further flesh out later this section.
+With this simple example out of the way, let's examine a more practical example from the field of Natural Language Processing.
 
 A common introductory example to Natural Language Processing or classification is detecting spam. While you may enjoy spam in a can, you probably don't enjoy getting spam in your inbox. Bayes' theorem can serve as a natural classification method in these scenarios. Assume that the word "offer" (as in Special Offer, We Have an Offer for You, or Don't Miss This Offer!) occurs in 73% of the spam messages you receive. In comparison, only 10% of your desired mail contains the word "offer". If 20% of the messages you receive are spam, and you receive another message with the word "offer", what is the probability that it is spam?
 
@@ -92,8 +92,8 @@ $P(\text{Spam | Offer}) = \dfrac{.73 \cdot .20}{P(\text{Offer})}$
 $P(\text{Spam | Offer}) = \dfrac{.73 \cdot .20}{.226}$  
 $P(\text{Spam | Offer}) = .6460$  
 
-As you can see, while spam has a much higher occurrence of the word "offer", the prescence of the word alone does not provide strong confidence that the message is spam. To provide more statistical power, you will eventually extend Bayes' theorem to multiple observations simultaneously using the relative probabilities of multiple words.  
+As you can see, while spam has a much higher occurrence of the word "offer", the presence of the word alone does not provide strong confidence that the message is spam. To provide more statistical power, you will eventually extend Bayes' theorem to multiple observations simultaneously using the relative probabilities of multiple words.  
 
 ## Summary
 
-In this lesson, you were introduced to the Bayes' theorem, and saw how it can be used to quanitify conditional probabilities. With that, let's turn to some more simple examples for you to practice and deepen your understanding.
+In this lesson, you were introduced to the Bayes' theorem, and saw how it can be used to quantify conditional probabilities. With that, let's turn to some more simple examples for you to practice and deepen your understanding.
